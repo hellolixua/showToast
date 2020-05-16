@@ -1,7 +1,8 @@
 
 import Vue from 'vue'
 import App from './App.vue'
-import showToast from '../showToast';
+// import showToast from '../showToast';
+import showToast from 'my-showtoast';
 
 Vue.use(showToast)
 

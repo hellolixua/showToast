@@ -1,11 +1,18 @@
 {
-  "name": "showToast",
-  "version": "1.0.0",
+  "name": "my-showtoast",
+  "version": "1.0.1",
   "description": "showToast",
   "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "https://www.jianshu.com/u/28178fe4ff08",
+  "keywords": [
+    "showToast",
+    "toast"
+  ],
+  "author": "[allan](https://www.jianshu.com/u/28178fe4ff08)",
   "license": "ISC"
 }
