@@ -1,11 +1,3 @@
-<!--
- * @Descripttion:
- * @Author: allan
- * @Date: 2020-05-12 15:01:57
- * @LastEditors: allan
- * @LastEditTime: 2020-05-22 16:25:34
--->
-
 <template>
   <div id="app">
     <CountDown
@@ -22,7 +14,6 @@
 </template>
 
 <script>
-// import CountDown from '../countDown';
 export default {
   name: 'app',
   data() {
@@ -31,14 +22,14 @@ export default {
       end: Date.now() + 9000
     }
   },
-  components: {
-    // CountDown
-  },
   mounted() {
-    this.$showToast.show('你好2020!')
-    setTimeout(() => {
-      this.$showToast.hide()
-    }, 3000);
+    /**
+     * my-showtoast
+     * this.$showToast.show('你好2020!')
+        setTimeout(() => {
+          this.$showToast.hide()
+        }, 3000);
+     */
   },
   methods: {
     startCallback(params) {

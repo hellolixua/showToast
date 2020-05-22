@@ -3,7 +3,7 @@
  * @Author: allan
  * @Date: 2020-05-12 15:01:57
  * @LastEditors: allan
- * @LastEditTime: 2020-05-22 16:38:38
+ * @LastEditTime: 2020-05-22 17:08:59
  */
 
 import Vue from 'vue'
@@ -11,11 +11,11 @@ import App from './App.vue'
 
 // 引入showToast
 // import showToast from '../showToast';  //引入文件夹里面的
-import showToast from 'my-showtoast';
+import showToast from 'my-showtoast';// 引入node_modules里面的
 
 // 引入倒计时
-// import CountDown from '../countDown/lib/components/countdown.vue'; // 引入node_modules里面的
-import CountDown from 'allan-countdown';
+import CountDown from '../countDown/lib/components/countdown.vue';// 引入文件夹里面的
+// import CountDown from 'allan-countdown';// 引入node_modules里面的
 
 Vue.use(showToast)
 Vue.component(CountDown.name, CountDown)
