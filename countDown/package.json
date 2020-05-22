@@ -1,0 +1,20 @@
+{
+  "name": "allan-countdown",
+  "version": "1.0.0",
+  "description": "vue倒计时",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "countDown",
+    "countdown",
+    "vue-countdown",
+    "allan",
+    "allan-countdown",
+    "vue倒计时",
+    "倒计时插件"
+  ],
+  "author": "[allan] (https://www.jianshu.com/u/28178fe4ff08)",
+  "license": "ISC"
+}

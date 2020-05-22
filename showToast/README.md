@@ -1,6 +1,6 @@
 
 安装
-npm install my-showtoast
+npm install my-showtoast --save
 
 引入
 import showToast from 'my-showtoast';
