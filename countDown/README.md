@@ -1,17 +1,9 @@
-<!--
- * @Descripttion: 
- * @Author: allan
- * @Date: 2020-05-21 10:31:26
- * @LastEditors: allan
- * @LastEditTime: 2020-05-22 15:15:14
---> 
-
 安装
 npm install allan-countdown --save
 
 引入
 import CountDown from 'allan-countdown';
-Vue.component(CountDown)
+Vue.component(CountDown.name, CountDown)
 
 使用
 `

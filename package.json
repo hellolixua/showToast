@@ -12,6 +12,7 @@
     "lib": "vue-cli-service build --target lib --name vue-tag-textarea --dest lib packages/index.js"
   },
   "dependencies": {
+    "allan-countdown": "^1.0.1",
     "my-showtoast": "^1.0.1",
     "vcolorpicker": "^0.1.8",
     "vue": "^2.5.17"

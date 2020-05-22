@@ -3,7 +3,7 @@
  * @Author: allan
  * @Date: 2020-05-12 15:01:57
  * @LastEditors: allan
- * @LastEditTime: 2020-05-22 16:25:52
+ * @LastEditTime: 2020-05-22 16:38:38
  */
 
 import Vue from 'vue'
@@ -15,7 +15,7 @@ import showToast from 'my-showtoast';
 
 // 引入倒计时
 // import CountDown from '../countDown/lib/components/countdown.vue'; // 引入node_modules里面的
-import CountDown from '../countDown';
+import CountDown from 'allan-countdown';
 
 Vue.use(showToast)
 Vue.component(CountDown.name, CountDown)
