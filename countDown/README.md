@@ -3,7 +3,7 @@
  * @Author: allan
  * @Date: 2020-05-21 10:31:26
  * @LastEditors: allan
- * @LastEditTime: 2020-05-22 15:09:21
+ * @LastEditTime: 2020-05-22 15:15:14
 --> 
 
 安装
@@ -14,12 +14,25 @@ import CountDown from 'allan-countdown';
 Vue.component(CountDown)
 
 使用
-`<count-down
-    @:startCallback="startCallback"
-    @:endCallback="endCallback"
-    id="my-countdown"
-    :params="params"
-></count-down>
+`
+<CountDown
+    id="countDown1"
+    @startCallback="startCallback"
+    @endCallback="endCallback"
+    :start="start"
+    :end="end"
+    endTxt="活动已结束"
+    countingTxt="活动剩余："
+    startTxt="距离活动开始："
+></CountDown>
+`
+`
+data() {
+    return {
+        start: Date.now() + 5000,
+        end: Date.now() + 9000
+    }
+},
 `
 说明
 startCallback:开始倒计时回调, necessary: false
@@ -28,64 +41,62 @@ id: { //当前倒计时组件id,在startCallback & endCallback 中会返回id, n
     type: String,
     default: ''
 },
-params: {
-    current:{ //当前时间(ms), necessary: false
-        type: Number,
-        default: Date.now()
-    },
-    start:{ //活动开始时间(ms), necessary: false
-        type: Number,
-        default: Date.now()
-    },
-    startTxt:{ //距离活动开始提示文字, necessary: false
-        type: String,
-        default: ''
-    },
-    countingTxt: {
-      // 活动进行中提示文字, necessary: false
-      type: String,
-      default: ''
-    },
-    end:{ //活动结束时间(ms), necessary: true
-        type: Number,
-        default: Date.now()
-    },
-    endTxt:{ //活动结束后提示文字, necessary: false
-        type: String,
-        default: ''
-    },
-    dayTxt: { //天后面的字符串, necessary: false
-        type: String,
-        default: ':'
-    },
-    hourTxt: {//小时后面的字符串, necessary: false
-        type: String,
-        default: ':'
-    },
-    minuteTxt: {//分钟后面的字符串, necessary: false
-        type: String,
-        default: ':'
-    },
-    secondTxt:{//秒后面的字符串, necessary: false
-        type: String,
-        default: ':'
-    },
-    dayShow: { // 是否显示天倒计时，necessary: false
-        type: Boolean,
-        default: true
-    },
-    hourShow: { // 是否显示小时倒计时，necessary: false
-        type: Boolean,
-        default: true
-    },
-    minuteShow: { // 是否显示分钟倒计时，necessary: false
-        type: Boolean,
-        default: true
-    },
-    secondShow: { // 是否显示秒倒计时，necessary: false
-        type: Boolean,
-        default: true
-    }
+current:{ //当前时间(ms), necessary: false
+    type: Number,
+    default: Date.now()
+},
+start:{ //活动开始时间(ms), necessary: false
+    type: Number,
+    default: Date.now()
+},
+startTxt:{ //距离活动开始提示文字, necessary: false
+    type: String,
+    default: ''
+},
+countingTxt: {
+    // 活动进行中提示文字, necessary: false
+    type: String,
+    default: ''
+},
+end:{ //活动结束时间(ms), necessary: true
+    type: Number,
+    default: Date.now()
+},
+endTxt:{ //活动结束后提示文字, necessary: false
+    type: String,
+    default: ''
+},
+dayTxt: { //天后面的字符串, necessary: false
+    type: String,
+    default: ':'
+},
+hourTxt: {//小时后面的字符串, necessary: false
+    type: String,
+    default: ':'
+},
+minuteTxt: {//分钟后面的字符串, necessary: false
+    type: String,
+    default: ':'
+},
+secondTxt:{//秒后面的字符串, necessary: false
+    type: String,
+    default: ':'
+},
+dayShow: { // 是否显示天倒计时，necessary: false
+    type: Boolean,
+    default: true
+},
+hourShow: { // 是否显示小时倒计时，necessary: false
+    type: Boolean,
+    default: true
+},
+minuteShow: { // 是否显示分钟倒计时，necessary: false
+    type: Boolean,
+    default: true
+},
+secondShow: { // 是否显示秒倒计时，necessary: false
+    type: Boolean,
+    default: true
 }
 
 [allan](https://www.jianshu.com/u/28178fe4ff08)

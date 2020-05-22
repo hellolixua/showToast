@@ -3,7 +3,7 @@
  * @Author: allan
  * @Date: 2020-05-12 15:01:57
  * @LastEditors: allan
- * @LastEditTime: 2020-05-22 15:07:52
+ * @LastEditTime: 2020-05-22 15:22:51
 -->
 
 <template>
@@ -22,7 +22,7 @@
 </template>
 
 <script>
-import CountDown from '../countDown/lib/components/countdown.vue';
+// import CountDown from '../countDown';
 export default {
   name: 'app',
   data() {
@@ -32,7 +32,7 @@ export default {
     }
   },
   components: {
-    CountDown
+    // CountDown
   },
   mounted() {
     this.$showToast.show('你好2020!')
